@@ -33,3 +33,6 @@ def main():
         print(n, "is prime")
     else:
         print(n, "is not prime")
+
+if __name__ == "__main__":
+    main()
