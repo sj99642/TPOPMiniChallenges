@@ -14,10 +14,28 @@ if it is a prime number or not. We can assume that the computer knows
 """
 
 def is_prime(n: int) -> bool:
-    pass
+    if n % 2 == 0:
+        return False
+    if n % 3 == 0:
+        return False
+    if n % 5 == 0:
+        return False
+    if n % 7 == 0:
+        return False
+
+    return True
 
 def main():
-    pass
+    n = int(input("Enter number between 2 and 49: "))
+
+    if n < 2 or n > 49:
+        print("Number out of range")
+        return
+
+    if is_prime(n):
+        print(n, "is prime")
+    else:
+        print(n, "is not prime")
 
 if __name__ == "__main__":
     main()
